@@ -1,5 +1,6 @@
 <template>
   <VssueComponent
+    class="vssue-wrapper"
     :key="key"
     :options="vssueOptions"
   />
@@ -56,3 +57,23 @@ export default {
   }
 }
 </script>
+
+<style lang="stylus">
+.vssue-wrapper.vssue
+  color: #2c3e50
+  color: var(--text-color)
+  .vssue-new-comment
+    border-bottom: 1px solid #eaecef;
+    border-bottom: 1px solid var(--border-color);
+    .vssue-new-comment-input:disabled
+      background-color: #fff;
+      background-color: var(--background-color);
+      border: 1px solid #eaecef;
+      border: 1px solid var(--border-color);
+    .vssue-new-comment-footer .vssue-current-user
+      color: #2c3e50
+      color: var(--text-color)
+  .vssue-header
+    border-bottom: 1px solid #eaecef;
+    border-bottom: 1px solid var(--border-color);
+</style>
