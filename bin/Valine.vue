@@ -97,8 +97,7 @@ export default {
           border-radius: .25rem
           border: none
       .vh
-        border-bottom: 1px dashed #eaecef
-        border-color var(--border-color)
+        border-bottom: none
         .vhead
           .vsys
             color: $accentColor
@@ -138,4 +137,7 @@ export default {
             background: var(--background-color)
     .info
       padding-right: .6rem
+    code, pre, .vbtn
+      background var(--background-color)
+      color var(--text-color)
 </style>
